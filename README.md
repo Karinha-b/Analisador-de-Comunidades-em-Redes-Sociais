@@ -14,7 +14,7 @@ do grafo.
 
 No terminal do seu dispositivo insira o caminho da pasta onde esta o arquivo.
 #### Entre o local da pasta: 
-cd "C:\Users\usuario\Desktop\Codigo\Projeto_Grafo"
+exemplo: cd "C:\Users\usuario\Desktop\Codigo\Projeto_Grafo"
 
 #### Execute o programa:
 python analisador_comunidade.py ou python3 analisador_comunidade.py
@@ -22,12 +22,18 @@ python analisador_comunidade.py ou python3 analisador_comunidade.py
 Ou
 Abra a pasta contendo o codigo e o arquivo grafo.txt em uma IDE de sua escolha e inicie o codigo
 
-### Como executar como arquivo .exe:
-Antes de abrir o terminal garanta que o arquiuvo grafo.txt esta na pasta dist
-No terminal do seu dispositivo insira o caminho da pasta dist.
+### Como gerar um executável (.exe):
+No terminal
+#### Instale o PyInstaller:
+pip install pyinstaller
 
-#### Entre o local da pasta: 
-cd "C:\Users\usuario\Desktop\dist"
+#### Dentro da pasta do projeto gere o executavel:
+pyinstaller --onefile analisador_comunidades.py
+
+Antes de abrir o terminal novamente garanta que o arquiuvo grafo.txt esta na pasta dist criada apos a compilação
+
+#### Entre o local da pasta dist: 
+exemplo: cd "C:\Users\usuario\Desktop\dist"
 
 #### Execute o programa:
 .\analisador_comunidade.exe ou analisador_comunidade.exe
