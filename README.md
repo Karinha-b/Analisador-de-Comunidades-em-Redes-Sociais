@@ -6,13 +6,13 @@
 ### Antes de começar, para compilar este codigo verifique:
 
 - Que a versão do Python instalada no seu dispositivo seja Python 3.8 ou superior
-- Se as bibliotecas networkx e matplotlib estao instaladas, se não ultilize pip install (biblioteca) para instalar
+- Que as bibliotecas networkx e matplotlib estejam instaladas, se não, ultilize pip install (biblioteca) para instalar
 
 ### Como executar a partir do codigo fonte: 
-Garanta que o arquivo grafo.txt esteja na mesma pasta com o codigo para que seja possivel fazer a leitura corretamente
-do grafo.
+Garanta que o arquivo grafo.txt esteja na mesma pasta com o codigo para que seja possivel fazer a leitura do grafo corretamente.
 
 No terminal do seu dispositivo insira o caminho da pasta onde esta o arquivo.
+
 #### Entre o local da pasta: 
 exemplo: cd "C:\Users\usuario\Desktop\Codigo\Projeto_Grafo"
 
@@ -33,6 +33,7 @@ exemplo: cd "C:\Users\usuario\Desktop\Codigo\Projeto_Grafo"
 #### Gere o executavel:
 pyinstaller --onefile --hidden-import="matplotlib.backends.backend_tkagg" analisador_comunidade.py
 
+### Como executar um executável (.exe): 
 Antes de prosseguir garanta que o arquiuvo grafo.txt esta na pasta dist criada apos a compilação
 
 #### Entre o local da pasta dist: 
@@ -40,6 +41,8 @@ exemplo: cd "C:\Users\usuario\Desktop\dist"
 
 #### Execute o programa:
 .\analisador_comunidade.exe ou analisador_comunidade.exe
+
+Apos executar pelo o terminal pela a primeira vez é possivel tambem executar pelo aplicativo encontrado na pasta dist
 
 ### O programa ira:
 
