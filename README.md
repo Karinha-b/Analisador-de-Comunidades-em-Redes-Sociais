@@ -27,10 +27,13 @@ No terminal
 #### Instale o PyInstaller:
 pip install pyinstaller
 
-#### Dentro da pasta do projeto gere o executavel:
-pyinstaller --onefile analisador_comunidades.py
+#### Dentro da pasta do projeto:
+exemplo: cd "C:\Users\usuario\Desktop\Codigo\Projeto_Grafo"
 
-Antes de abrir o terminal novamente garanta que o arquiuvo grafo.txt esta na pasta dist criada apos a compilação
+#### Gere o executavel:
+pyinstaller --onefile --hidden-import="matplotlib.backends.backend_tkagg" analisador_comunidade.py
+
+Antes de prosseguir garanta que o arquiuvo grafo.txt esta na pasta dist criada apos a compilação
 
 #### Entre o local da pasta dist: 
 exemplo: cd "C:\Users\usuario\Desktop\dist"
